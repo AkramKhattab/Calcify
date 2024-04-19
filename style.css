@@ -1,0 +1,87 @@
+/* Setting up default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0d1117;
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+}
+
+/* Color variables */
+:root {
+  --white-color: #ecf0f3;
+  --orange-color: #d04326;
+}
+
+/* Center alignment */
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Developed by Akram Khattab */
+/* Container height */
+.container {
+  height: 100vh;
+}
+
+/* Calculator styles */
+.calculator {
+  background-color: var(--white-color);
+  padding: 15px;
+  border-radius: 35px;
+  box-shadow: 5px 5px 40px rgba(105, 105, 105, 0.3),
+    -5px -5px 40px rgba(105, 105, 105, 0.3);
+}
+
+/* Grid layout for buttons */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 68px);
+  grid-template-rows: repeat(5);
+}
+
+/* Styling for output screen */
+#output-screen {
+  grid-column: span 4;
+  height: 75px;
+  width: 260px;
+  background-color: var(--white-color);
+  box-shadow: inset -5px -5px 12px #ffffff,
+    inset 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 30px;
+  color: rgb(70, 70, 70);
+  font-size: 50px;
+  text-align: end;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+/* Styling for buttons */
+button {
+  height: 48px;
+  width: 48px;
+  background-color: var(--white-color);
+  box-shadow: -5px -5px 12px #ffffff, 5px 5px 12px rgba(0, 0, 0, 0.16);
+  border: none;
+  border-radius: 50%;
+  margin: 8px;
+  font-size: 16px;
+}
+
+/* Styling for equals button */
+.equal-to {
+  width: 115px;
+  border-radius: 40px;
+  color: white;
+  background-color: var(--orange-color);
+}
+
+/* Styling for text-colored buttons */
+.text-color {
+  color: var(--orange-color);
+}
